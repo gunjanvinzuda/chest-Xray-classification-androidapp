@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cameraBtn"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:layout_above="@id/galleryBtn"
+        android:text="Take Picture"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/galleryBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:text="Launch Gallery"/>
+
+    <ImageView
+        android:layout_width="370sp"
+        android:layout_height="370sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Classified as: "
+        android:textStyle="bold"
+        android:id="@+id/classification"
+        android:layout_below="@id/imageView"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textStyle="bold"
+        android:id="@+id/result"
+        android:layout_below="@id/classification"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
